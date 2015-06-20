@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tim's Sleep Tools</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="ahicalc">
+  <h2>AHI Calculator</h2>
+  <form name="AHIform">
+    <h4>Total Sleep Time (in minutes):</h4>
+    <div>
+      <input type="number" name="tst" size="3" />
+    </div>
+    <h4>Number of apneas + hypopneas:</h4>
+    <div>
+      <input type="number" name="apnea" size="3" />
+    </div>
+    <div>
+      <input type="button" value="Calculate AHI" onclick="calculateAHI()">
+    </div>
+    <div>
+      <input type="text" name="ahi" size="5">
+    </div>
+    <div>
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+<script type="text/javascript">
+function calculateAHI() {
+  var tst = document.AHIform.tst.value;
+  var apnea = document.AHIform.apnea.value;
+  if (tst > 0 && apnea > 0) {
+    var ahi = apnea / (tst / 60);
+    document.AHIform.ahi.value = ahi.toFixed(1);
+  } else {
+    document.AHIform.ahi.value = "Invalid input"
+  }
+}
+</script>
+
+</body>
+</html>

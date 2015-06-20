@@ -1,0 +1,48 @@
+body {
+  background-color: #212121;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  background: #303F9F;
+}
+
+.ahicalc {
+  background-color: #3F51B5;
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  line-height: 40px;
+  color: white;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+}
+
+h4 {
+  font-size: 1em;
+}
+
+input {
+  width: 120px;
+  padding: 0px;
+}
+
+input[type="number"],
+input[type="text"],
+textarea {
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="button"],
+input[type="reset"] {
+  background: #fff;
+  border: none;
+  border-radius: 2px;
+  color: #646464;
+  font-size: 0.9em;
+  line-height: 32px;
+  margin: 20px 0;
+  width: 120px;
+}
